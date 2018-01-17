@@ -1,0 +1,12 @@
+# Method 2 - Write a program that prints the number of times the string 'bob' occurs in s = 'azcbobobegghakl'
+
+s = 'azcbobobegghakl'
+slength = len(s)
+numBob = 0
+
+for k in range(0,slength):
+    if s[k] == 'b' and s[k+1] == 'o' and s[k+2] == 'b':
+        numBob += 1
+print(numBob)
+
+# comment: cleaner but I am not comfortable with the k+2. potential for error?
